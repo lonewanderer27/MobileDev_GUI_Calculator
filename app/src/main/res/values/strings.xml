@@ -15,12 +15,14 @@
     <string name="txt_9">9</string>
     <string name="txt_add">+</string>
     <string name="txt_minus">-</string>
-    <string name="txt_multiply">x</string>
+    <string name="txt_multiply">×</string>
     <string name="txt_divide">÷</string>
+    <string name="txt_modulo">%</string>
     <string name="txt_ce">CE</string>
     <string name="txt_c">C</string>
     <string name="txt_equals">=</string>
     <string name="txt_operation"></string>
     <string name="txt_prevNum"></string>
     <string name="txt_currentNum"></string>
+    <string name="ui_color">#e8ba00</string>
 </resources>

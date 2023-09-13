@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String SUBTRACT = "-";
     private static final String MULTIPLY = "x";
     private static final String DIVIDE = "÷";
+    private static final String MODULO = "%";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     // Check if the button text represents an operator.
     private boolean isOperator(String buttonText) {
         return buttonText.equals(ADD) || buttonText.equals(SUBTRACT) ||
-                buttonText.equals(MULTIPLY) || buttonText.equals(DIVIDE);
+                buttonText.equals(MULTIPLY) || buttonText.equals(DIVIDE) || buttonText.equals(MODULO);
     }
 
     // Handle operator input.
@@ -152,6 +153,9 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     result = n1 / n2;
                 }
+                break;
+            case MODULO:
+                result = n1 % n2;
                 break;
         }
         tvPrev.setText(n1 + " " + operation + " " + n2 + " =");
